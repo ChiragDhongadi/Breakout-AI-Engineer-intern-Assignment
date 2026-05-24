@@ -6,7 +6,7 @@ The system implements a structured **four-stage pipeline** (FAQ answering, Lead 
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 This project has been built in a clean, simple, and modular folder structure:
 
@@ -50,7 +50,7 @@ python app.py
 
 ---
 
-## 🛡️ Graph Nodes Architecture
+## Graph Nodes Architecture
 
 We use a compiled **LangGraph** `StateGraph` which invokes three sequential nodes on each customer message turn:
 
@@ -65,7 +65,7 @@ After the LangGraph compiled state runs, the session is persisted directly to [c
 
 ---
 
-## ⚠️ Prototype Limitations & Trade-offs
+## Prototype Limitations & Trade-offs
 
 - **Keyword Matching Intercepts**: Scans keywords first before checking with the LLM to save token cost and guarantee absolute safety on common triggers.
 - **Local FAISS Indexing**: FAISS index is generated on boot in-memory using CPU embeddings. In production, this can be written to disk or replaced with a hosted vector database.
