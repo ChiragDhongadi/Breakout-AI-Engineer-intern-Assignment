@@ -4,6 +4,9 @@ Welcome to the **Closira AI Customer Support Agent** prototype! This Python-base
 
 The system implements a structured **four-stage pipeline** (FAQ answering, Lead Qualification, Escalation detection, and Session Summarization) utilizing standard JSON states, keyword scans, vector search retrievals, and Pydantic validation schemas.
 
+## Demo Video link
+https://drive.google.com/file/d/1VCg7Xs9UUmm6fL-pMkocqKP5QVAxgRqM/view?usp=sharing
+
 ---
 
 ## Project Structure
